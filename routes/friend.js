@@ -25,7 +25,8 @@ exports.list = function(req, res) {
       return event.weeth === found.name;
     });
     found.activities = [];
-    found.activities.push(...activites);
+//     found.activities.push(...activites);
+    found.activities.push(activites);
   }
   console.log(found);
   res.render("friend", found);
