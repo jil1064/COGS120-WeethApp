@@ -41,9 +41,9 @@ exports.view = function(req, res) {
       }
   }
 
-  total_events.events.sort((a, b) => {
-    return Date.parse(b.date) - Date.parse(a.date);
-  });
+//  total_events.events.sort((a, b) => {
+//    return Date.parse(b.date) - Date.parse(a.date);
+//  });
   res.render("home", total_events);
 };
 
